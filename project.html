@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="project.css">
+    <title>Unit Converter</title>
+</head>
+<body id="body">
+    <h1  id="head" align="Center"></h1>
+    <div id="x">
+        <p align="center" id="xxx" style="color:rgb(224, 245, 40)" >Percentage</p>
+        <label style="color:white">Input</label>
+        <input id="inp" type="number" name="n" placeholder="Input" oninput="p1(this.value)" onchange="p1(this.value)" >
+        <br>
+        <label style="color:white" >Total</label>
+        <input id="tot" type="number" name="k" placeholder="Total" oninput="p1(this.value)" onchange="p1(this.value)">
+        <p style="color:rgb(224, 245, 40)">Percentage:<span id="per"></span></p>
+    </div>
+        <script>
+            function p1(){
+                n=document.getElementById("inp").value;
+                k=document.getElementById("tot").value;
+                n=parseInt(n);
+                k=parseInt(k);
+                document.getElementById("per").innerHTML=(n/k)*100;
+            }
+        </script>
+        
+    
+    <div id="y">
+        <p align="center" id="xxx" style="color:rgb(14, 255, 6)">Volume</p>
+        <label >Cubic-m</label>
+        <input id="inp" type="number" placeholder="Cubic-m" oninput="tc00(this.value)" onchange="tc00(this.value)" >
+        <br>
+        <p>Cubic-cm: <span id="ccm"></span></p>
+        <label>Cubic-cm</label>
+        <input id="tot" type="number" placeholder="Cubic-cm" oninput="tc0(this.value)" onchange="tc0(this.value)" >
+        <p>Cubic-m: <span id="ccmm"></span></p>
+    </div>
+    <script>
+        function tc00(n){
+         n=parseFloat(n);
+         document.getElementById("ccm").innerHTML=(n*1000000);
+        }
+    </script>
+    <script>
+        function tc0(n){
+         n=parseFloat(n);
+         document.getElementById("ccmm").innerHTML=(n/1000000);
+        }
+    </script>
+    <div id="z">
+        <p id="xxx" align="center">Length</p>
+        <label>Metre</label>
+        <input id="mtr" type="number" placeholder="metre" oninput="tc2(this.value)" onchange="tc2(this.value)">
+        <br>
+        <p>Yard: <span id="yrdd"></span></p>
+        <label>Yard</label>
+        <input id="yrd" type="number" placeholder="yard" oninput="tc3(this.value)" onchange="tc3(this.value)">
+        <p>Metre: <span id="mre"></span></p>
+    </div>
+    <script>
+            function tc2(n){
+             n=parseFloat(n);
+             document.getElementById("yrdd").innerHTML=(n*1.09361);
+            }
+        </script>
+        <script>
+            function tc3(n){
+             n=parseFloat(n);
+             document.getElementById("mre").innerHTML=n*0.9144;
+            }
+        </script>
+    <div id="a">
+        <p id="xxx" align="center">Length</p>
+        <label >Foot</label>
+        <input id="foot" type="number" name="ft" placeholder="Foot" oninput="ln(this.value)" onchange="ln(this.value)">
+        <br>
+        <label>Inch</label>
+        <input id="inch" type="number" name="inc" placeholder="Inch" oninput="ln(this.value)" onchange="ln(this.value)">
+        <br>
+        <p>Metres:<span id="metre"></span></p>
+    </div>
+    <script>
+            function ln(){
+             ft=document.getElementById("foot").value;
+             inc=document.getElementById("inch").value;
+             ft=parseInt(ft);
+             inc=parseInt(inc);
+             document.getElementById("metre").innerHTML=ft*0.3048+inc*0.0254;
+            }
+        </script>
+    <div id="b">
+        <p id="xxx" align="center">Temperature</p>
+        <label>Fahrenhite</label>
+        <input id="fah" type="number" placeholder="Fahrenhite" oninput="tc(this.value)" onchange="tc(this.value)" >
+        <br>
+        <p>Celcius: <span id="celcius"></span></p>
+        <label>Celcius</label>
+        <input id="cel" type="number" placeholder="Celcius"  oninput="tc1(this.value)" onchange="tc1(this.value)" >
+        <p>Fahrenhite: <span id="Fahh"></span></p>
+        <script>
+            function tc(n){
+             n=parseFloat(n);
+             document.getElementById("celcius").innerHTML=(n-32)/1.8;
+            }
+        </script>
+        <script>
+            function tc1(n){
+             n=parseFloat(n);
+             document.getElementById("Fahh").innerHTML=(n*1.8)+32;
+            }
+        </script>
+
+    </div>
+    <div id="c">
+        <p id="xxx" align="center">Energy</p>
+        <label>Joule</label>
+        <input id="ip" type="number" placeholder="Joule" oninput="en(this.value)" onchange="en(this.value)">
+        <br>
+        <p>Kilo Calorie: <span id="wt"></span></p>
+        <label>KiloCalorie</label>
+        <input id="wtt" type="number" placeholder="KiloCalorie" oninput="en1(this.value)" onchange="en1(this.value)" >
+        <p>Joule: <span id="kjou"></span></p>
+        <script>
+            function en1(n){
+             n=parseFloat(n);
+             document.getElementById("kjou").innerHTML=n*4184;
+            }
+        </script>
+        <script>
+            function en(n){
+             n=parseFloat(n);
+             document.getElementById("wt").innerHTML=n*0.000239006;
+            }
+        </script>
+    </div>
+
+    <div id="d">   
+         <p id="xxx" align="center">Speed</p>
+         <label>Km/H</label>
+        <input id="kmph" type="number" placeholder="Km/H"oninput="s1(this.value)" onchange="s1(this.value)" >
+        <br>
+        <p>m/s: <span id="mm"></span></p>
+        <label>m/s</label>
+        <input id="mps" type="number" placeholder="m/s" oninput="s2(this.value)" onchange="s2(this.value)" >
+        <p>km/h: <span id="kmm"></span></p>
+        <script>
+            function s1(n){
+             n=parseFloat(n);
+             document.getElementById("mm").innerHTML=(n*5)/18;
+            }
+        </script>
+        <script>
+            function s2(n){
+             n=parseFloat(n);
+             document.getElementById("kmm").innerHTML=n*3.6;
+            }
+        </script>
+    </div>
+    <div id="e">
+        <p id="xxx" align="center">Mass</p>
+        <label>Kg</label>
+        <input id="kg" type="number" placeholder="Kg" oninput="m1(this.value)" onchange="m1(this.value)" >
+        <br>
+        <p>gram: <span id="gmm"></span></p>
+        <label>g</label>
+        <input id="gramm" type="number" placeholder="g" oninput="m2(this.value)" onchange="m2(this.value)" >
+        <p>Kg: <span id="kgg"></span></p>
+        <script>
+            function m1(n){
+             n=parseFloat(n);
+             document.getElementById("gmm").innerHTML=n*1000;
+            }
+        </script>
+        <script>
+            function m2(n){
+             n=parseFloat(n);
+             document.getElementById("kgg").innerHTML=n/1000;
+            }
+        </script>
+    </div>
+    <div>
+        <footer>
+        <p id="f0">Made with love in India</p>
+        <p id="f1"> Copyright 2021 @ Sazal Jain. All rights reserved.</p>
+        <p id="f2">Designed by Sazal Jain</p>
+        </footer>
+    </div>
+</body>
+</html>

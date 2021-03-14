@@ -1,0 +1,224 @@
+#head{
+    background-image:url(unitconv.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    height:180px;
+    width: 500px;
+    font-size: xx-large; 
+}
+#body{
+    background-image:url(bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+#x{
+    padding: 10px;
+    border: 5px solid rgb(202, 36, 31);
+    background-image:url(percent.jpg);
+    background-color: rgb(214, 111, 240);
+    width:300px;
+    text-shadow:2px 2px rgb(42, 7, 240);
+    font-weight:bolder;
+    text-align: center;
+    height:250px;
+    border-radius:70px;
+    font-size: 20px;
+}
+#y{
+    padding: 10px;
+    background-image:url(volume.jpg);
+    border: 5px solid rgb(202, 36, 31);
+    background-color: rgb(187, 196, 115);
+    text-shadow:2px 2px rgb(255, 0, 13);
+    color:white;
+    width:300px;
+    height:250px;
+    border-radius:70px;
+    position: relative;
+    margin-top: -280px;
+    margin-left: 390px;
+    font-weight:bolder;
+    text-align: center;
+}
+#z{
+    padding: 10px;
+    background-image:url(length.jpg);
+    border: 5px solid rgb(202, 36, 31);
+    background-color: rgb(168, 247, 158);
+    width:300px;
+    height:250px;
+    text-shadow:2px 2px yellow;
+    color:black;
+    border-radius:70px;
+    position: relative;
+    margin-top: -280px;
+    margin-left: 780px;
+    font-weight:bolder;
+    text-align: center;
+}
+#a{
+    padding: 10px;
+    background-image:url(foot.jpg);
+    background-size:cover;
+    border: 5px solid rgb(202, 36, 31);
+    background-color: rgb(125, 253, 204);
+    width:300px;
+    height:250px;
+    color:red;
+    text-shadow: 2px 2px springgreen;
+    font-size: 20px;
+    font-weight:bolder;
+    text-align: center;
+    border-radius:70px;
+    position: relative;
+    margin-top: -280px;
+    margin-left: 1170px;
+}
+#b{
+    padding: 10px;
+    background-image:url(temperature.jpg);
+    font-weight:bolder;
+    text-align: center;
+    border: 5px solid rgb(202, 36, 31);
+    background-color: rgb(255, 173, 177);
+    width:300px;
+    height:250px;
+    border-radius:70px;
+    position: relative;
+    margin-top:30px;
+    text-shadow:2px 2px lime;
+    color:red;
+}
+#c{
+    padding: 10px;
+    background-image:url(energy.jpg);
+    border: 5px solid rgb(202, 36, 31);
+    background-color: rgb(187, 196, 115);
+    width:300px;
+    height:250px;
+    border-radius:70px;
+    position: relative;
+    margin-top: -280px;
+    margin-left: 390px;
+    font-weight:bolder;
+    text-align: center;
+    text-shadow:2px 2px red;
+    color:yellow;
+}
+#d{
+    padding: 10px;
+    background-image:url(speed.jpg);
+    background-size:cover;
+    border: 5px solid rgb(202, 36, 31);
+    background-color: rgb(78, 150, 184);
+    width:300px;
+    height:250px;
+    border-radius:70px;
+    position: relative;
+    margin-top: -280px;
+    margin-left: 780px;
+    font-weight:bolder;
+    text-align: center;
+    text-shadow:2px 2px black;
+    color:lime;
+}
+#e{
+    padding: 10px;
+    background-image:url(mass.jpg);
+    font-weight:bolder;
+    text-align: center;
+    border: 5px solid rgb(202, 36, 31);
+    background-color: rgb(255, 172, 213);
+    width:300px;
+    height:250px;
+    border-radius:70px;
+    position: relative;
+    margin-top: -280px;
+    margin-left: 1170px;
+    text-shadow:2px 2px rgb(25, 255, 4);
+    color:rgb(255, 69, 0);
+}
+
+#f0{
+
+    font-family: 'Times New Roman', Times, serif;
+    /* height:50px; */
+    font-size: 15px;
+    padding: 8px;
+    margin-top: 30px;
+    height: 10px;
+    background-color:orange ;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f1{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 8px;
+    height: 10px;
+    background-color:white ;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+#f2{
+        font-family: 'Times New Roman', Times, serif;
+        background-color:green ;
+        color: gold;
+        height: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 8px;
+        font-size: 15px;
+        text-align: center;
+}
+#xxx{
+    font-size: 30px;
+}
+#mtr{
+    background-color: unset;
+}
+#inp{
+    background-color: unset;
+}
+#yrd{
+    background-color: unset;
+}
+#tot{
+    background-color: unset;
+}
+#inch{
+    background-color: unset;
+}
+#ip{
+    background-color: unset;
+}
+#wtt{
+    background-color: unset;
+}
+
+#foot{
+    background-color: unset;
+}
+#fah{
+    background-color: unset;
+}
+#cel{
+    background-color: unset;
+}
+#kmph{
+    background-color: unset;
+}
+#mps{
+    background-color: unset;
+}
+#kg{
+    background-color: unset;
+}
+#gramm{
+    background-color: unset;
+}
